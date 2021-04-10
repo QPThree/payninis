@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    overflow-x: hidden;
 }
 header {
     background-color: rgba(206, 164, 26, 0.856);
