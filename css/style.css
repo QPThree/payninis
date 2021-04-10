@@ -1,19 +1,28 @@
 body {
-    background-color: grey;
+    background-image: url("/images/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header {
-    background-color: rgba(206, 164, 26, 0.781);
+    background-color: rgba(206, 164, 26, 0.856);
     display: block;
     width: 100%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    height: 20%;
 }
+
 h1 {
     margin-top: 7%;
     margin-left: 10%;
     font-size: 64px;
+    border:solid;
+    padding: 2% 2% 2% 2%;
 }
 #logo{
     display:inline-flex;
     width: 100%;
+    padding-top: 5%;
 }
 
 header ul{
@@ -54,7 +63,9 @@ header a{
 }
 
 footer{
-    background-color: rgb(206, 164, 26, 0.781);
+    background-color: rgb(206, 164, 26, 0.856);
+    border-bottom-left-radius: 20;
+    border-bottom-right-radius: 20%;
     height: 7em;
 }
 
