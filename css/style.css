@@ -1,8 +1,9 @@
+
 body {
     background-image: url("https://user-images.githubusercontent.com/64719075/114284685-87937000-9a06-11eb-8f07-7ef1a7501a1e.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 100%;
 }
 header {
     background-color: rgba(206, 164, 26, 0.856);
@@ -52,7 +53,7 @@ header a{
 }
 
 .breakfast{
-    background-color: green;
+    background-image: url("https://user-images.githubusercontent.com/64719075/114284870-c118ab00-9a07-11eb-9986-ca3a53c319f3.jpg");
 }
 
 .lunch{
@@ -60,7 +61,7 @@ header a{
 }
 
 .dinner{
-    background-color: red;
+    background-image:url("https://user-images.githubusercontent.com/64719075/114284972-72b7dc00-9a08-11eb-981e-ebf7a7aca67d.jpg");
 }
 
 footer{
