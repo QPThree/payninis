@@ -72,15 +72,23 @@ header a{
 }
 
 .breakfast{
-    background-image: url("https://user-images.githubusercontent.com/64719075/114284870-c118ab00-9a07-11eb-9986-ca3a53c319f3.jpg");
+    background-color: gold;
+    background-image: url("../images/eggs.png");
+    background-repeat: no-repeat;
+    
 }
 
 .lunch{
-    background-color: rgb(117, 83, 8);
+    background-color: rgb(199, 105, 43);
+    background-position: 5px;
+    background-image: url("../images/burgers.png");
+    background-repeat: no-repeat;
 }
 
 .dinner{
-    background-image:url("https://user-images.githubusercontent.com/64719075/114284972-72b7dc00-9a08-11eb-981e-ebf7a7aca67d.jpg");
+    background-color: rgba(79, 184, 48);
+    background-image: url("../images/bento.png");
+    background-repeat: no-repeat;
 }
 
 footer{
