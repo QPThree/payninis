@@ -45,7 +45,7 @@ switch (meal) {
 
 //finds greeting id in HTML and assigns greeting
 e =document.getElementById('greeting');
-e.innerHTML = greeting+ '<br>'+ad;
+e.innerHTML = greeting+ '<br> '+ad;
 
 
 //Prints special for the day
