@@ -50,7 +50,8 @@ header a{
 
 #greeting{
     text-align: center;
-    
+    color: whitesmoke;
+    font-size: 48px;
 }
 
 .breakfast,

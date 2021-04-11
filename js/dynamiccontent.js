@@ -6,7 +6,6 @@ var greeting;
 var meal;
 var ad;
 
-
 //determins greeting
 if (hourNow > 18) {
     greeting='Good Evening, '+userName;
@@ -25,7 +24,6 @@ if (hourNow > 16){
 } else if (hourNow > 4){
     meal = 2;
 }
-
 
 //switch will 1. find what time it is, 2. calculate which menu would be adequate for that time, and 3. return
 // a printed ad for that menu
