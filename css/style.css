@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("https://user-images.githubusercontent.com/64719075/114284685-87937000-9a06-11eb-8f07-7ef1a7501a1e.jpg");
+    background-image: url("../images/woodbackground.jpg"); /*Vecteezy.com*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -80,7 +80,6 @@ header a{
 
 .lunch{
     background-color: rgb(199, 105, 43);
-    background-position: 5px;
     background-image: url("../images/burgers.png");
     background-repeat: no-repeat;
 }
