@@ -54,9 +54,17 @@ header a{
     font-size: 48px;
 }
 
+#special{
+        text-align: center;
+        color: gold;
+        font-size: 48px;
+    }
+
+
 .breakfast,
 .lunch,
-.dinner{
+.dinner,
+#special{
     width: 50%;
     margin-left: 25%;
     text-decoration: none;

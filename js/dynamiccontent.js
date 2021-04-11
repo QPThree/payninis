@@ -2,9 +2,12 @@
 var userName = prompt("Who is hungry?");
 var today = new Date();
 var hourNow = today.getHours();
+var day = today.getDay();
 var greeting;
 var meal;
 var ad;
+
+var specialmeallist = ['Pizza', 'Wings', 'Tacos', 'Margaritas', 'Reuben', 'Pancakes', 'Ice Cream Sunday'];
 
 //determins greeting
 if (hourNow > 18) {
@@ -42,5 +45,40 @@ switch (meal) {
 
 //finds greeting id in HTML and assigns greeting
 e =document.getElementById('greeting');
-e.innerHTML =greeting+ '<br>'+ad;
+e.innerHTML = greeting+ '<br>'+ad;
+
+
+//Prints special for the day
+var specialmeal;
+specialmeal = specialmeallist[day];
+
+switch (day){
+    case 0:
+        day = 'Sunday';
+        //specialmeal = 'Wings';
+        break;
+    case 1:
+        day = 'Monday';
+        specialmeal = 'pizza';
+        break;
+    case 2:
+        day = 'Tuesday';
+        specialmeal = 'pizza';
+        break;
+    case 3:
+        day = 'Wednesday';
+        break;
+    case 4:
+        day = 'Thursday';
+        break;
+    case 5:
+        day = 'Friday';
+        break;
+    case 6:
+        day = 'Saturday';
+        break;
+}
+
+specialid = document.getElementById('special');
+specialid.innerHTML = day+'s Special is: '+specialmeal;
 
