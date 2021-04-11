@@ -48,6 +48,10 @@ header a{
     color: white;
 }
 
+#greeting{
+    text-align: center;
+}
+
 .breakfast,
 .lunch,
 .dinner{

@@ -13,5 +13,7 @@ if (hourNow > 18) {
 } else {
     greeting = 'Welcome,'  +userName;
 }
-document.write('<h3>' + greeting + '</h3>')
+
+e = document.getElementById('greeting');
+e.innerHTML =greeting;
 
