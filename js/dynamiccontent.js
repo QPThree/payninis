@@ -1,5 +1,5 @@
 //variables declared
-var userName = prompt("Who is hungry?");
+var userName = prompt("Who is hungry?", "Hungry Person");
 var today = new Date();
 var hourNow = today.getHours();
 var day = today.getDay();
@@ -10,6 +10,8 @@ var ad;
 var specialmeallist = ['Pizza', 'Wings', 'Tacos', 'Margaritas', 'Reuben', 'Pancakes', 'Ice Cream Sunday'];
 
 //determins greeting
+
+
 if (hourNow > 18) {
     greeting='Good Evening, '+userName;
 } else if (hourNow > 12){
