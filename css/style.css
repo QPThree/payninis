@@ -13,6 +13,8 @@ header {
     border-top-left-radius: 70%;
     border-top-right-radius: 70%;
     height: 20%;
+    border: solid;
+    border-color: rgb(49, 48, 48);
 }
 #strip{
     display: block;
@@ -112,13 +114,16 @@ header a{
     background-color: rgba(79, 184, 48);
     background-image: url("../images/bento.png");
     background-repeat: no-repeat;
+    margin-bottom: 5%;
 }
 
 footer{
     background-color: rgb(206, 164, 26, 0.856);
-    border-bottom-left-radius: 20;
+    border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     height: 10%;
+    border: solid;
+    border-color: rgb(49, 48, 48);
 }
 
 footer p {
