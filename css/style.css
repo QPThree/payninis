@@ -84,6 +84,7 @@ header a{
         text-align: center;
         color: gold;
         font-size: 48px;
+        border-style: outset;
     }
 
 
@@ -94,26 +95,28 @@ header a{
     width: 50%;
     margin-left: 25%;
     text-decoration: none;
-    border: solid;
+    
 }
 
 .breakfast{
     background-color: gold;
     background-image: url("../images/eggs.png");
     background-repeat: no-repeat;
-    
+    border:solid;
 }
 
 .lunch{
     background-color: rgb(199, 105, 43);
     background-image: url("../images/burgers.png");
     background-repeat: no-repeat;
+    border:solid;
 }
 
 .dinner{
     background-color: rgba(79, 184, 48);
     background-image: url("../images/bento.png");
     background-repeat: no-repeat;
+    border:solid;
     margin-bottom: 5%;
 }
 
