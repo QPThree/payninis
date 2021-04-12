@@ -55,15 +55,12 @@ specialmeal = specialmeallist[day];
 switch (day){
     case 0:
         day = 'Sunday';
-        //specialmeal = 'Wings';
         break;
     case 1:
         day = 'Monday';
-        specialmeal = 'pizza';
         break;
     case 2:
         day = 'Tuesday';
-        specialmeal = 'pizza';
         break;
     case 3:
         day = 'Wednesday';
