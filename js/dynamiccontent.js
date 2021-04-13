@@ -1,19 +1,23 @@
-var today = new Date();
 
-//will give greeting to user with their entered name
+
+// giveGreeting function will 
+//1. Prompt user for their name
+//2. Personalize the greeting with name entered by user.  'hungry person' as default
+//3. Get time of day, and give greeting dependant on the current
+//4. Return greeting to be used in html as an h3 tag
 function giveGreeting(){
-// variables
+
+    var today = new Date();
     var userName = prompt("Who is hungry?", "Hungry Person");
     var hourNow = today.getHours();
     var greeting;
     
-
     if (hourNow > 18) {
-        greeting='<h3 id=\'greeting\'>Good Evening, '+userName+'</h3>';
+        greeting='<h3 id=\'greeting\'>Good Evening, '+userName+'<br> You should check out our dinner menu!</h3>';
     } else if (hourNow > 12){
-        greeting = '<h3 id=\'greeting\'>Good Afternoon,'+userName+'</h3>';
+        greeting = '<h3 id=\'greeting\'>Good Afternoon,'+userName+'<br> You should check out our lunch menu!</h3>';
     } else if (hourNow > 0){
-        greeting = '<h3 id=\'greeting\'>Good Morning, '+userName+'</h3>';
+        greeting = '<h3 id=\'greeting\'>Good Morning, '+userName+'<br> You should check out our breakfast menu!</h3>';
     } else {
         greeting = '<h3 id=\'greeting\'>Welcome, '+userName+'</h3>';
     }
@@ -21,38 +25,17 @@ function giveGreeting(){
     return greeting;
 }
 
-
-
-
-///stuff for special of the day function
+//getSpecial function will
+//1. Tell users what the days special is
+//2. Special will be stored in an array and change each day
+//3. 
 function getSpecial(){
-    
-    var hourNow = today.getHours();
-    var ad;
-    var meal;
+    var today = new Date();
     var day = today.getDay();
     var specialmeallist = ['Pizza', 'Wings', 'Tacos', 'Margaritas', 'Reuben', 'Pancakes', 'Ice Cream Sunday'];
     var specialmeal;
     specialmeal = specialmeallist[day];
     
-    if (hourNow > 16){
-        meal = 0;
-    } else if (hourNow > 11){
-        meal = 1;
-    } else if (hourNow > 4){
-        meal = 2;
-    }
-    switch (meal) {
-        case 0:
-            ad = 'You should check out our dinner menu!';
-            break;
-        case 1:
-            ad = 'You should check out our lunch menu!';
-            break;
-        case 2:
-            ad = 'You should check out our breakfast menu!';
-            break;
-    }
     switch (day){
         case 0:
             day = 'Sunday';
