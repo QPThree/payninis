@@ -1,83 +1,84 @@
-//variables declared
-var userName = prompt("Who is hungry?", "Hungry Person");
 var today = new Date();
-var hourNow = today.getHours();
-var day = today.getDay();
-var greeting;
-var meal;
-var ad;
 
-var specialmeallist = ['Pizza', 'Wings', 'Tacos', 'Margaritas', 'Reuben', 'Pancakes', 'Ice Cream Sunday'];
+//will give greeting to user with their entered name
+function giveGreeting(){
+// variables
+    var userName = prompt("Who is hungry?", "Hungry Person");
+    var hourNow = today.getHours();
+    var greeting;
+    
 
-//determins greeting
+    if (hourNow > 18) {
+        greeting='<h3 id=\'greeting\'>Good Evening, '+userName+'</h3>';
+    } else if (hourNow > 12){
+        greeting = '<h3 id=\'greeting\'>Good Afternoon,'+userName+'</h3>';
+    } else if (hourNow > 0){
+        greeting = '<h3 id=\'greeting\'>Good Morning, '+userName+'</h3>';
+    } else {
+        greeting = '<h3 id=\'greeting\'>Welcome, '+userName+'</h3>';
+    }
 
-
-if (hourNow > 18) {
-    greeting='Good Evening, '+userName;
-} else if (hourNow > 12){
-    greeting = 'Good Afternoon,' +userName;
-} else if (hourNow > 0){
-    greeting = 'Good Morning, ' +userName;
-} else {
-    greeting = 'Welcome,'  +userName;
+    return greeting;
 }
 
-if (hourNow > 16){
-    meal = 0;
-} else if (hourNow > 11){
-    meal = 1;
-} else if (hourNow > 4){
-    meal = 2;
-}
-
-//switch will 1. find what time it is, 2. calculate which menu would be adequate for that time, and 3. return
-// a printed ad for that menu
-
-switch (meal) {
-    case 0:
-        ad = 'You should check out our dinner menu!';
-        break;
-    case 1:
-        ad = 'You should check out our lunch menu!';
-        break;
-    case 2:
-        ad = 'You should check out our breakfast menu!';
-        break;
-}
-
-//finds greeting id in HTML and assigns greeting
-e =document.getElementById('greeting');
-e.innerHTML = greeting+ '<br> '+ad;
 
 
-//Prints special for the day
-var specialmeal;
-specialmeal = specialmeallist[day];
 
-switch (day){
-    case 0:
-        day = 'Sunday';
-        break;
-    case 1:
-        day = 'Monday';
-        break;
-    case 2:
-        day = 'Tuesday';
-        break;
-    case 3:
-        day = 'Wednesday';
-        break;
-    case 4:
-        day = 'Thursday';
-        break;
-    case 5:
-        day = 'Friday';
-        break;
-    case 6:
-        day = 'Saturday';
-        break;
-}
+///stuff for special of the day function
+function getSpecial(){
+    
+    var hourNow = today.getHours();
+    var ad;
+    var meal;
+    var day = today.getDay();
+    var specialmeallist = ['Pizza', 'Wings', 'Tacos', 'Margaritas', 'Reuben', 'Pancakes', 'Ice Cream Sunday'];
+    var specialmeal;
+    specialmeal = specialmeallist[day];
+    
+    if (hourNow > 16){
+        meal = 0;
+    } else if (hourNow > 11){
+        meal = 1;
+    } else if (hourNow > 4){
+        meal = 2;
+    }
+    switch (meal) {
+        case 0:
+            ad = 'You should check out our dinner menu!';
+            break;
+        case 1:
+            ad = 'You should check out our lunch menu!';
+            break;
+        case 2:
+            ad = 'You should check out our breakfast menu!';
+            break;
+    }
+    switch (day){
+        case 0:
+            day = 'Sunday';
+            break;
+        case 1:
+            day = 'Monday';
+            break;
+        case 2:
+            day = 'Tuesday';
+            break;
+        case 3:
+            day = 'Wednesday';
+            break;
+        case 4:
+            day = 'Thursday';
+            break;
+        case 5:
+            day = 'Friday';
+            break;
+        case 6:
+            day = 'Saturday';
+            break;
+    }
 
-specialid = document.getElementById('special');
-specialid.innerHTML = day+'s Special is: '+specialmeal;
+    return '<h3 id=\'special\'>'+day+'s Special is: '+specialmeal+'</h3>';
+
+}   
+
 

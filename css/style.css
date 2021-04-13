@@ -35,8 +35,7 @@ header {
     display: inline;
     padding-right: 5%;
     margin-right: 40%;
-    width:20%;
-    
+    width:20%; 
 }
 
 #burger{
@@ -66,7 +65,10 @@ header li {
     display: inline;
     padding-right: 5%;
     margin-right: 40%;
+    
 }
+
+
 .navigation:hover{
     border-color: white;
     border: solid;
