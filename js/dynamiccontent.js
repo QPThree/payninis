@@ -1,5 +1,3 @@
-
-
 // giveGreeting function will 
 //1. Prompt user for their name
 //2. Personalize the greeting with name entered by user.  'hungry person' as default
@@ -33,8 +31,7 @@ function getSpecial(){
     var today = new Date();
     var day = today.getDay();
     var specialmeallist = ['Pizza', 'Wings', 'Tacos', 'Margaritas', 'Reuben', 'Pancakes', 'Ice Cream Sunday'];
-    var specialmeal;
-    specialmeal = specialmeallist[day];
+    var specialmeal = specialmeallist[day];
     
     switch (day){
         case 0:
@@ -64,7 +61,9 @@ function getSpecial(){
 
 }   
 
-//Quiz to access webpage
+//Quiz to access secret Menu
+//User is given an alert taht quiz is beginning
+//5 questions will be asked, if less than 4 are correct,user doesn't pass
 
 function promptQuiz(){
 
@@ -85,17 +84,18 @@ function promptQuiz(){
             correct = correct + 1;
             console.log(correct);
         }
-        answer = prompt("How many states in the US are there?", "Come on...");
-        if (answer == '50'){
-            correct = correct + 1;
-            console.log(correct);
-        }
         answer = prompt("What year was Reagan born?");
         if (answer == '1911'){
             correct = correct + 1;
             console.log(correct);
         }
-        answer = prompt("Find this answer in the source code");
+        answer = prompt("How many states were in the US in 1911?");
+        if (answer == '46'){
+            correct = correct + 1;
+            console.log(correct);
+        }
+        
+        answer = prompt("Go to the source for this answer");
         if (answer == 'sike'){
             correct = correct + 1;
             console.log(correct);
@@ -104,5 +104,6 @@ function promptQuiz(){
             alert("Back to the beginning!");
         }
     }
-    alert('Congratulations! Unfortunately there are no specials this week.  Go Pats.');
+    alert('Congratulations! Here is our special menu!  Go Pats.');
+    window.open("https://www.applebees.com/en/menu");
 }

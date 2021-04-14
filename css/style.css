@@ -6,6 +6,7 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+
 header {
     background-color: rgba(206, 164, 26, 0.856);
     display: block;
@@ -16,21 +17,22 @@ header {
     border: solid;
     border-color: rgb(49, 48, 48);
 }
+
 #strip{
     display: block;
     float:right;
     width: 100%;
     height: 35px;
-    
 }
+
 #strip ul{
     margin-top: 0;
     display: inline-flex;
     clear: left;
     float: left;
     margin-left: 75%;
-    
 }
+
 #strip li {
     display: inline;
     padding-right: 5%;
@@ -49,6 +51,7 @@ h1 {
     border:solid;
     padding: 2% 2% 2% 2%;
 }
+
 #logo{
     display:inline-flex;
     width: 100%;
@@ -61,13 +64,12 @@ header ul{
     clear: left;
     margin-left: 25%;
 }
+
 header li {
     display: inline;
     padding-right: 5%;
     margin-right: 40%;
-    
 }
-
 
 .navigation:hover{
     border-color: white;
@@ -91,8 +93,7 @@ header a{
         color: gold;
         font-size: 48px;
         border-style: outset;
-    }
-
+}
 
 .breakfast,
 .lunch,
