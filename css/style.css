@@ -82,6 +82,10 @@ header a{
     color: white;
 }
 
+#ratingstars {
+    text-align: left;
+}
+
 #greeting{
     text-align: center;
     color: whitesmoke;

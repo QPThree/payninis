@@ -113,12 +113,12 @@ function promptQuiz(){
 //Rating will display that number for 'stars'
 function userRating(){
     var element = document.getElementById("ratingstars");
-    var rating = prompt("How would you rate us?  Type in an integer up to 5!")
-    
+    var rating = prompt("How would you rate us?  Type in an integer up to 5!");
     while (rating != '1' && rating!= '2' && rating!= '3' && rating != '4' && rating != '5'){
         rating = prompt("Must be number between 1 and 5");
     }
     for (i = 0; i < rating; i++){
         element.innerHTML = element.innerHTML + "<img src=images/star.png height = 50 width = 50>"+(i+1);
     }
+
 }
