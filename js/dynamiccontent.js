@@ -64,7 +64,7 @@ function getSpecial(){
 //Quiz to access secret Menu
 //User is given an alert taht quiz is beginning
 //5 questions will be asked, if less than 4 are correct,user doesn't pass
-
+//4 Correct answers will open our secret menu
 function promptQuiz(){
 
     alert("Welcome to our Weekly Quiz!.  Pass the test to access our best deals!.  4 Correct gets you the secret menu.");
@@ -106,4 +106,19 @@ function promptQuiz(){
     }
     alert('Congratulations! Here is our special menu!  Go Pats.');
     window.open("https://www.applebees.com/en/menu");
+}
+
+//User rating
+//User will submit number 1-5
+//Rating will display that number for 'stars'
+function userRating(){
+    var element = document.getElementById("ratingstars");
+    var rating = prompt("How would you rate us?  Type in an integer up to 5!")
+    while (rating != '1' && rating!= '2' && rating!= '3' && rating != '4' && rating != '5'){
+        rating = prompt("Must be number between 1 and 5");
+    }
+    for (i = 0; i < rating; i++){
+        element.innerHTML = element.innerHTML + "<img src=images/star.png height = 50 width = 50>";
+    }
+
 }
