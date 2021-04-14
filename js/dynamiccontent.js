@@ -64,4 +64,45 @@ function getSpecial(){
 
 }   
 
+//Quiz to access webpage
 
+function promptQuiz(){
+
+    alert("Welcome to our Weekly Quiz!.  Pass the test to access our best deals!.  4 Correct gets you the secret menu.");
+    
+    var correct = 0;
+    var answer;
+
+    while(correct < 4){
+        correct = 0;
+        answer = prompt("How many Super Bowls has Tom brady won?", "Hint: a lot");
+        if (answer == '7'){
+            correct = correct + 1;
+            console.log(correct);
+        }
+        answer = prompt("Who's the current governor of Vermont?");
+        if (answer == 'Phil Scott'){
+            correct = correct + 1;
+            console.log(correct);
+        }
+        answer = prompt("How many states in the US are there?", "Come on...");
+        if (answer == '50'){
+            correct = correct + 1;
+            console.log(correct);
+        }
+        answer = prompt("What year was Reagan born?");
+        if (answer == '1911'){
+            correct = correct + 1;
+            console.log(correct);
+        }
+        answer = prompt("Find this answer in the source code");
+        if (answer == 'sike'){
+            correct = correct + 1;
+            console.log(correct);
+        }
+        if (correct < 4){
+            alert("Back to the beginning!");
+        }
+    }
+    alert('Congratulations! Unfortunately there are no specials this week.  Go Pats.');
+}
