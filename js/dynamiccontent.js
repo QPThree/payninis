@@ -118,7 +118,7 @@ function userRating(){
         rating = prompt("Must be number between 1 and 5");
     }
     for (i = 0; i < rating; i++){
-        element.innerHTML = element.innerHTML + "<img src=images/star.png height = 50 width = 50>";
+        element.innerHTML = element.innerHTML + "<img src=images/star.png height = 50 width = 50>"+(i+1);
     }
 
 }
