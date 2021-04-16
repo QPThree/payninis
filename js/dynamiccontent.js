@@ -10,16 +10,18 @@ function giveGreeting(){
     var hourNow = today.getHours();
     var greeting;
     
-    if (hourNow > 18) {
-        greeting='<h3 id=\'greeting\'>Good Evening, '+userName+'<br> You should check out our dinner menu!</h3>';
-    } else if (hourNow > 12){
-        greeting = '<h3 id=\'greeting\'>Good Afternoon,'+userName+'<br> You should check out our lunch menu!</h3>';
-    } else if (hourNow > 0){
-        greeting = '<h3 id=\'greeting\'>Good Morning, '+userName+'<br> You should check out our breakfast menu!</h3>';
-    } else {
-        greeting = '<h3 id=\'greeting\'>Welcome, '+userName+'</h3>';
+    while (userName === null || userName === ''){
+        userName = prompt("Please enter a valid name");
     }
-
+    if (hourNow > 18) {
+        greeting='<h3 id=\'greeting\'>Good Evening, '+userName+' <br> You should check out our dinner menu!</h3>';
+    } else if (hourNow > 12){
+        greeting = '<h3 id=\'greeting\'>Good Afternoon,'+userName+' <br> You should check out our lunch menu!</h3>';
+    } else if (hourNow > 0){
+        greeting = '<h3 id=\'greeting\'>Good Morning, '+userName+' <br> You should check out our breakfast menu!</h3>';
+    } else {
+        greeting = '<h3 id=\'greeting\'>Welcome, '+userName+' </h3>';
+    }
     return greeting;
 }
 
@@ -56,9 +58,7 @@ function getSpecial(){
             day = 'Saturday';
             break;
     }
-
     return '<h3 id=\'special\'>'+day+'s Special is: '+specialmeal+'</h3>';
-
 }   
 
 //Quiz to access secret Menu
@@ -114,9 +114,11 @@ function promptQuiz(){
 function userRating(){
     var element = document.getElementById("ratingstars");
     var rating = prompt("How would you rate us?  Type in an integer up to 5!");
+
     while (rating != '1' && rating!= '2' && rating!= '3' && rating != '4' && rating != '5'){
         rating = prompt("Must be number between 1 and 5");
     }
+
     for (i = 0; i < rating; i++){
         element.innerHTML = element.innerHTML + "<img src=images/star.png height = 50 width = 50>"+(i+1);
     }
